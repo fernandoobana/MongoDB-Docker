@@ -10,8 +10,7 @@ namespace TesteMongoDocker
 
         public Service()
         {
-            //var client = new MongoClient("mongodb://admin:mongopass123@localhost:27020");  //caso queira conectar com usuário e senha
-            var client = new MongoClient("mongodb://basemongo");
+            var client = new MongoClient("mongodb://admin:mongopass123@localhost:27017");
             var database = client.GetDatabase("DataBaseMongo");
 
             _objTestes = database.GetCollection<ObjTeste>("CollectionTeste");
