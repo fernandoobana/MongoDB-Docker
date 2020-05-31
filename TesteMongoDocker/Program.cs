@@ -16,14 +16,14 @@ namespace TesteMongoDocker
 
             ObjTeste t1 = new ObjTeste()
             {
-                Id = ObjectId.GenerateNewId().ToString(),
+                //Id = ObjectId.GenerateNewId().ToString(),
                 Name = "testando obj 1"
             };
             _service.Create(t1);
 
             ObjTeste t2 = new ObjTeste()
             {
-                Id = ObjectId.GenerateNewId().ToString(),
+                //Id = ObjectId.GenerateNewId().ToString(),
                 Name = "testando obj 2"
             };
             _service.Create(t2);
